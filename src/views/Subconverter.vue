@@ -253,7 +253,7 @@ export default {
           "自动判断客户端": "auto",
         },
         customBackend: {
-          "localhost:25500 本地版": "https://sub.arest.cc/sub?",
+          "本地": "https://sub.arest.cc/sub?",
         },
         backendOptions: [
           { value: "https://sub.arest.cc/sub?" },
