@@ -373,8 +373,8 @@ export default {
             label: "默认",
             options: [
               {
-                label: "不选，由接口提供方提供",
-                value: ""
+                label: "自用配置，基于ACL4SSR，添加PT分流，机场不友好",
+                value: "https://raw.githubusercontent.com/Duan-rax/Proxy-Rules/main/config.ini"
               }
             ]
           },
@@ -557,6 +557,11 @@ export default {
                   "https://cdn.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/ark.ini"
               },
               {
+                label: "自用配置，机场不友好",
+                value:
+                  "https://raw.githubusercontent.com/Duan-rax/Proxy-Rules/main/config.ini"
+              },
+              {
                 label: "ssrCloud",
                 value:
                   "https://cdn.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/ssrcloud.ini"
@@ -640,7 +645,7 @@ export default {
   },
   created() {
     // document.title = "Subscription Converter";
-    document.title = "在线订阅转换";
+    document.title = "订阅转换";
      this.isPC = this.$getOS().isPc;
 
     // 获取 url cache
